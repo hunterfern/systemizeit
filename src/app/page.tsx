@@ -200,6 +200,105 @@ export default function Page() {
   </div>
 </section>
 
+  {/* ADS */}
+<section id="ads" className="relative bg-[#0b1020]">
+  <div className="mx-auto max-w-6xl px-4 py-20">
+    <div className="text-center">
+      <span className="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold
+        bg-[#5865F2]/15 text-[#5865F2] ring-1 ring-white/10">
+        SystemizeIT Ads
+      </span>
+      <h2 className="mt-4 text-3xl md:text-4xl font-extrabold text-white">
+        Google Ads that actually bring in leads.
+      </h2>
+      <p className="mt-3 text-slate-300 max-w-3xl mx-auto">
+        No more wasted ad spend. We launch and optimize campaigns that
+        turn clicks into booked jobs and paying customers.
+      </p>
+    </div>
+
+    {/* Pricing cards */}
+    <div className="mt-12 grid md:grid-cols-3 gap-6">
+      {/* Starter */}
+      <div className="card-glass rounded-2xl p-7 text-slate-200">
+        <div className="text-sm font-semibold text-slate-300">Starter</div>
+        <div className="mt-2 text-3xl font-extrabold text-white">$500<span className="text-base font-bold">/mo</span></div>
+        <ul className="mt-5 space-y-3">
+          {[
+            "First campaign launch",
+            "Setup & strategy",
+            "Weekly optimization",
+          ].map((item) => (
+            <li key={item} className="flex gap-3">
+              <span className="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#5865F2]/20 text-[#5865F2]">
+                <svg className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-7.25 7.25a1 1 0 01-1.414 0l-3-3a1 1 0 011.414-1.414l2.293 2.293 6.543-6.543a1 1 0 011.414 0z" clipRule="evenodd"/>
+                </svg>
+              </span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Growth */}
+      <div className="card-glass rounded-2xl p-7 text-slate-200">
+        <div className="text-sm font-semibold text-slate-300">Growth</div>
+        <div className="mt-2 text-3xl font-extrabold text-white">$1,000<span className="text-base font-bold">/mo</span></div>
+        <ul className="mt-5 space-y-3">
+          {[
+            "Conversion tracking",
+            "Multiple campaigns",
+            "Ongoing scaling",
+          ].map((item) => (
+            <li key={item} className="flex gap-3">
+              <span className="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#5865F2]/20 text-[#5865F2]">
+                <svg className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-7.25 7.25a1 1 0 01-1.414 0l-3-3a1 1 0 011.414-1.414l2.293 2.293 6.543-6.543a1 1 0 011.414 0z" clipRule="evenodd"/>
+                </svg>
+              </span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Dominate */}
+      <div className="card-glass rounded-2xl p-7 text-slate-200">
+        <div className="text-sm font-semibold text-slate-300">Dominate</div>
+        <div className="mt-2 text-3xl font-extrabold text-white">$1,500+<span className="text-base font-bold">/mo</span></div>
+        <ul className="mt-5 space-y-3">
+          {[
+            "Remarketing campaigns",
+            "Competitor tracking",
+            "Advanced reporting",
+          ].map((item) => (
+            <li key={item} className="flex gap-3">
+              <span className="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#5865F2]/20 text-[#5865F2]">
+                <svg className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-7.25 7.25a1 1 0 01-1.414 0l-3-3a1 1 0 011.414-1.414l2.293 2.293 6.543-6.543a1 1 0 011.414 0z" clipRule="evenodd"/>
+                </svg>
+              </span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+
+    {/* single CTA under all plans */}
+    <div className="mt-10 text-center">
+      <a
+        href="#book"
+        className="inline-flex items-center rounded-full bg-[#5865F2] hover:bg-[#4f59e0] text-white px-7 py-3 text-base font-semibold shadow-[0_10px_30px_rgba(88,101,242,0.45)] ring-1 ring-white/10 transition-all"
+      >
+        Book a Free Call
+      </a>
+    </div>
+  </div>
+</section>
+
+
     </main>
   )
 }

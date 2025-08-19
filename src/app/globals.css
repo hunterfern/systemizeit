@@ -31,3 +31,46 @@ body {
   --color-brand-700: #434cc3;
 
 }
+
+/* ---- Galaxy background for hero ---- */
+.hero-galaxy {
+  /* base */
+  background: #0b1020;
+  /* layered radial gradients for a soft nebula feel */
+  background-image:
+    radial-gradient(1200px 600px at 10% -10%, rgba(88,101,242,0.30), transparent 60%),
+    radial-gradient(900px 500px at 90% 0%, rgba(79,89,224,0.25), transparent 55%),
+    radial-gradient(1100px 550px at 50% 110%, rgba(67,76,195,0.28), transparent 60%),
+    radial-gradient(1000px 700px at 70% 40%, rgba(120,84,255,0.18), transparent 60%);
+  position: relative;
+}
+
+/* optional soft vignette to focus the center */
+.hero-galaxy::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(60% 60% at 50% 40%, rgba(255,255,255,0.06), transparent 70%),
+    radial-gradient(120% 100% at 50% 50%, rgba(0,0,0,0.25), transparent 60%);
+}
+
+/* ---- Glassy nav bar over dark hero ---- */
+.nav-glass {
+  background: linear-gradient(
+      to bottom,
+      rgba(11,16,32,0.75),
+      rgba(11,16,32,0.35)
+  );
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+}
+
+/* optional: subtle card glass */
+.card-glass {
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+}
+
